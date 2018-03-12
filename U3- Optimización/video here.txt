@@ -1,0 +1,19 @@
+Para esta unidad, se decidió implementar una calculadora en Ruby que fuera capaz de trabajar con expresiones más complejas. Por ejemplo (211*22)+24. Y una vez implementada, optimizar el código a fin de reducir su tiempo de ejecución y consumo de recursos. En Ruby, la clase encargada de medir estos tiempos de ejecución, es la clase Benchmark, ya integrada en Ruby.
+
+
+Nostros ocupamos el realtime, que como su nombre lo dice, mide en tiempo real (en segundos) el tiempo de ejecución de cualquier código. El modo de utilizar esta clase es de la siguiente manera.
+Donde cualquier pedazo de código que esté entre do y end será examinado. Cabe mencionar que hay operaciones que incrementan considerablemente estos tiempos de ejecución, tales como las operaciones de entrada a través del teclado por métodos como gets.
+
+En nuestro caso, dicha calculadora se desarrolló bajo Ruby, a continuación se muestra el programa implementado en Ruby:
+
+
+Después de un par de optimizaciones podemos observar los cambios que sufre, junto con su tiempo de ejecución.
+
+
+Es el programa más lento, debido probablemente al método de printf, que es capaz de leer texto con un formato más rico como el de C, además de requerir la conversión explícita de un número enorme.
+
+La diferencia entre estos 2 programas fue mínima, por lo que ambos serían una buena opción.
+
+Sin embargo, contrastando lo anterior expuesto, podemos definir al programa como el más rápido y por lo tanto más optimizado.
+
+https://youtube.be/pioDPS6Zarw
